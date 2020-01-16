@@ -44,10 +44,6 @@ class ArtistsController < ApplicationController
     redirect_to artists_path
   end
 
-  def song_count
-    count = @artist.songs.count
-  end
-
   private
 
   def artist_params
